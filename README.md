@@ -18,7 +18,7 @@ A fully configurable token plugin with an API.
   - **Permission**: `tokens.top`
   - **Description**: Display the top players with the highest token balances.
 
-### Admin Commands
+### Admin Commands (tokens.admin to view the commands in any way)
 - `/rtokens addtokens <player> <amount>`
   - **Permission**: `tokens.addtokens`
   - **Description**: Add a specific amount of tokens to a player's balance.
