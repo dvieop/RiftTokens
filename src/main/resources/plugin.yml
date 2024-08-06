@@ -1,0 +1,4 @@
+name: RiftTokens
+version: '${project.version}'
+main: dvie.rifttokens.RiftTokens
+api-version: '1.20'
