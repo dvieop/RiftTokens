@@ -45,14 +45,18 @@ A fully configurable token plugin with an API.
 
 ## API
 
+	<repositories>
 		<repository>
 		    <id>jitpack.io</id>
 		    <url>https://jitpack.io</url>
 		</repository>
+	</repositories>
 
 	<dependency>
 	    <groupId>com.github.dvieop</groupId>
 	    <artifactId>RiftTokens</artifactId>
 	    <version>-SNAPSHOT</version>
 	</dependency>
+
+ RiftTokensApi.INSTANCE. to get the methods
 
