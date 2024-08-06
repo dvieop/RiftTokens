@@ -17,7 +17,7 @@ class AdminTokenCommands(vararg names: String?) : SYSCommandBranch("rtokens") {
         addCommand(
             SYSCommand("addtokens")
             .setPermission("tokens.addtokens")
-            .setUsage("/tokens addtokens <player> <amount>")
+            .setUsage("/rtokens addtokens <player> <amount>")
             .setArguments(PlayerArgument(), IntegerArgument())
             .executes { sender, args ->
                 val target = Bukkit.getPlayer(args[0] as String)
@@ -29,7 +29,7 @@ class AdminTokenCommands(vararg names: String?) : SYSCommandBranch("rtokens") {
         addCommand(
             SYSCommand("removetokens")
             .setPermission("tokens.removetokens")
-            .setUsage("/tokens removetokens <player> <amount>")
+            .setUsage("/rtokens removetokens <player> <amount>")
             .setArguments(PlayerArgument(), IntegerArgument())
             .executes { sender, args ->
                 val target = Bukkit.getPlayer(args[0] as String)
@@ -41,7 +41,7 @@ class AdminTokenCommands(vararg names: String?) : SYSCommandBranch("rtokens") {
         addCommand(
             SYSCommand("settokens")
             .setPermission("tokens.settokens")
-            .setUsage("/tokens settokens <player> <amount>")
+            .setUsage("/rtokens settokens <player> <amount>")
             .setArguments(PlayerArgument(), IntegerArgument())
             .executes { sender, args ->
                 val target = Bukkit.getPlayer(args[0] as String)
@@ -53,7 +53,7 @@ class AdminTokenCommands(vararg names: String?) : SYSCommandBranch("rtokens") {
         addCommand(
             SYSCommand("reset")
             .setPermission("tokens.reset")
-            .setUsage("/tokens reset <player>")
+            .setUsage("/rtokens reset <player>")
             .setArguments(PlayerArgument())
             .executes { sender, args ->
                 val target = Bukkit.getPlayer(args[0] as String)
@@ -64,7 +64,7 @@ class AdminTokenCommands(vararg names: String?) : SYSCommandBranch("rtokens") {
         addCommand(
             SYSCommand("resetall")
             .setPermission("tokens.resetall")
-            .setUsage("/tokens resetall")
+            .setUsage("/rtokens resetall")
             .executes { sender, args ->
                 RiftTokens.data.clear()
                 Util.sendMessage(sender, "&aReset all tokens")
@@ -74,7 +74,7 @@ class AdminTokenCommands(vararg names: String?) : SYSCommandBranch("rtokens") {
         addCommand(
             SYSCommand("reload")
             .setPermission("tokens.reload")
-            .setUsage("/tokens reload")
+            .setUsage("/rtokens reload")
             .executes { sender, args ->
                 RiftTokens.configManager.reload()
                 Util.sendMessage(sender, RiftTokens.configManager.config!!.reload)
