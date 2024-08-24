@@ -20,7 +20,8 @@ class TokenCommands(vararg names: String?) : SYSCommandBranch("tokens") {
             })
 
 
-        addCommand(SYSCommand("top")
+        addCommand(
+            SYSCommand("top")
             .setPermission("tokens.top")
             .setUsage("/tokens top")
             .executes { sender, args ->

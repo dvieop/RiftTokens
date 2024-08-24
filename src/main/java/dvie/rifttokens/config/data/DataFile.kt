@@ -73,7 +73,7 @@ class DataFile(private val file: File, val plugin: JavaPlugin) {
         }
     }
 
-    fun set(playerId: UUID, path: String, value: Any?) {
+    fun set(playerId: UUID, path: Int, value: Any?) {
         config!!["players.${playerId}.$path"] = value
     }
 

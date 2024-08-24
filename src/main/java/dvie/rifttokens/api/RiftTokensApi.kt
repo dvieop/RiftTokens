@@ -4,6 +4,7 @@ import dvie.rifttokens.RiftTokens
 import java.util.*
 
 object RiftTokensApi {
+
     fun getPlayerTokens(uuid: UUID?): Int {
         return RiftTokens.data.getAmount(uuid!!)
     }

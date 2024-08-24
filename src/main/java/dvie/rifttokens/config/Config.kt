@@ -20,6 +20,7 @@ class Config {
     var resetTokens: String = "&aYou have reset &f%player%'s &atokens"
     var resetAll: String = "&aYou have reset all tokens"
     var reload: String = "&aYou have reloaded the config"
+    var loginAmount: Int = 100
 
     @Comment("", "Token top message")
     var top: String = "&aTop 10 players:"

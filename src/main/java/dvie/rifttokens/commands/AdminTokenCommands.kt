@@ -79,6 +79,5 @@ class AdminTokenCommands(vararg names: String?) : SYSCommandBranch("rtokens") {
                 RiftTokens.configManager.reload()
                 Util.sendMessage(sender, RiftTokens.configManager.config!!.reload)
             })
-
     }
 }
