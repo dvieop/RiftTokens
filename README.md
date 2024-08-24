@@ -18,7 +18,7 @@ A fully configurable token plugin with an API.
   - **Permission**: `tokens.top`
   - **Description**: Display the top players with the highest token balances.
 
-### Admin Commands
+### Admin Commands (tokens.admin to view the commands in any way)
 - `/rtokens addtokens <player> <amount>`
   - **Permission**: `tokens.addtokens`
   - **Description**: Add a specific amount of tokens to a player's balance.
@@ -44,4 +44,19 @@ A fully configurable token plugin with an API.
   - **Description**: Reload the plugin configuration.
 
 ## API
+
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+	<dependency>
+	    <groupId>com.github.dvieop</groupId>
+	    <artifactId>RiftTokens</artifactId>
+	    <version>-SNAPSHOT</version>
+	</dependency>
+
+ RiftTokensApi.INSTANCE. to get the methods
 
